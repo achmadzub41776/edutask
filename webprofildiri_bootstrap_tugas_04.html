@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Profil Diri</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #f0f4ff, #d9e6f2);
+    }
+    header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+    .brand {
+      font-size: 24px;
+      font-weight: bold;
+      color: #0d6efd;
+      padding: 15px;
+    }
+    .menu {
+      text-align: right;
+    }
+    .menu a {
+      display: block;
+      margin: 10px 0;
+      color: #0d6efd;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .menu a:hover {
+      text-decoration: underline;
+    }
+    .bio-box {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Section 1: Header & Menu -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Kiri Brand -->
+      <div class="col-md-3 d-flex align-items-center justify-content-center">
+        <div class="brand">My Brand</div>
+      </div>
+      <!-- Kanan Menu -->
+      <div class="col-md-9 menu">
+        <header>
+          <h1>Profil Diri Saya</h1>
+        </header>
+        <nav>
+          <a href="#biodata">Biodata</a>
+          <a href="#portofolio">Portofolio</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2: Welcome -->
+  <div class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2 class="text-primary">SELAMAT DATANG DI WEBSITE SAYA</h2>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="papi.jpg" alt="Foto Profil" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 3: Biodata -->
+  <div id="biodata" class="container my-5 text-center">
+    <h2 class="text-primary">BIO DATA</h2>
+    <p class="text-muted">Perkenalkan Diri Saya</p>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="bio-box">Nama: John Doe</div>
+      </div>
+      <div class="col-md-4">
+        <div class="bio-box">Umur: 30 Tahun</div>
+      </div>
+      <div class="col-md-4">
+        <div class="bio-box">Alamat: Jakarta</div>
+      </div>
+      <div class="col-md-4">
+        <div class="bio-box">Pekerjaan: Developer</div>
+      </div>
+      <div class="col-md-4">
+        <div class="bio-box">Hobi: Membaca</div>
+      </div>
+      <div class="col-md-4">
+        <div class="bio-box">Email: johndoe@mail.com</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4: Portofolio -->
+  <div id="portofolio" class="container my-5">
+    <h2 class="text-center text-primary mb-4">Portofolio</h2>
+
+    <!-- Carousel -->
+    <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indikator bulatan -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active text-center">
+          <img src="https://plus.unsplash.com/premium_photo-1681487178876-a1156952ec60?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-50" alt="Portofolio 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Proyek 1</h5>
+            <p>Deskripsi singkat proyek pertama.</p>
+            <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalProyek1">Lihat Detail</button>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item text-center">
+          <img src="https://images.unsplash.com/photo-1735825764452-7c77b0bbd7a7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-50" alt="Portofolio 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Proyek 2</h5>
+            <p>Deskripsi singkat proyek kedua.</p>
+            <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalProyek2">Lihat Detail</button>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item text-center">
+          <img src="https://plus.unsplash.com/premium_photo-1661602130329-b11d41eedfe7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-50" alt="Portofolio 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Proyek 3</h5>
+            <p>Deskripsi singkat proyek ketiga.</p>
+            <button class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#modalProyek3">Lihat Detail</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Modal Proyek 1 -->
+  <div class="modal fade" id="modalProyek1" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Detail Proyek 1</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Ini detail lengkap proyek 1. Bisa dijelaskan lebih panjang mengenai teknologi yang dipakai, tujuan, dan hasilnya.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Proyek 2 -->
+  <div class="modal fade" id="modalProyek2" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Detail Proyek 2</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Ini detail lengkap proyek 2. Bisa jelaskan tools yang dipakai dan hasil yang dicapai.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Proyek 3 -->
+  <div class="modal fade" id="modalProyek3" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Detail Proyek 3</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Ini detail lengkap proyek 3. Bisa ceritakan lebih detail tentang proses pengerjaan dan manfaatnya.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
