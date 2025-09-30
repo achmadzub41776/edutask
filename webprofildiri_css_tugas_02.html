@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Diri</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background:#f5f7fa; color:#333; }
+    header {
+      display:flex; justify-content:space-between; align-items:center;
+      padding:20px; background:linear-gradient(90deg, #0d47a1, #1976d2); color:white;
+    }
+    .brand { font-size:22px; font-weight:bold; }
+    nav ul { list-style:none; margin:0; padding:0; display:flex; gap:20px; }
+    nav a { color:white; text-decoration:none; font-weight:bold; transition:0.3s; }
+    nav a:hover { color:#ffeb3b; }
+
+    section { padding:50px 20px; }
+
+    /* Section 2 */
+    .section2 { 
+      display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:20px;
+      background:#e3f2fd;
+    }
+    .section2 h1 { font-size:32px; color:#0d47a1; margin-bottom:15px; }
+    .section2 p { font-size:16px; color:#333; }
+    .section2 img { width:300px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.2); }
+
+    /* Section 3 */
+    .section3 { text-align:center; background:#fffde7; }
+    .section3 h2 { font-size:34px; color:#f57f17; margin-bottom:10px; }
+    .section3 h3 { font-size:18px; color:#555; margin-bottom:30px; }
+    .biodata-grid {
+      display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+      gap:20px; max-width:1000px; margin:auto;
+    }
+    .box {
+      background:linear-gradient(135deg, #ffcc80, #ffb74d);
+      padding:20px; border-radius:10px; font-weight:bold;
+      box-shadow:0 2px 6px rgba(0,0,0,0.2); text-align:center;
+      color:#fff;
+    }
+
+    /* Section 4 */
+    .section4 { background:#e8f5e9; }
+    .section4 h2 { text-align:center; font-size:30px; margin-bottom:20px; color:#2e7d32; }
+    .portfolio-grid {
+      display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+      gap:25px; max-width:1100px; margin:auto;
+    }
+    .portfolio-item {
+      background:white; border-radius:12px; overflow:hidden; text-align:center;
+      box-shadow:0 3px 8px rgba(0,0,0,0.2); transition:transform 0.3s;
+    }
+    .portfolio-item:hover { transform:translateY(-5px); }
+    .portfolio-item img {
+      width:100%; height:160px; object-fit:cover;
+    }
+    .portfolio-item h3 {
+      margin:15px 0 10px; font-size:20px; color:#2e7d32;
+    }
+    .portfolio-item p {
+      padding:0 10px 15px; font-size:14px; color:#555;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Section 1: Header -->
+  <header>
+    <div class="brand">LOGO BRAND</div>
+    <nav>
+      <ul>
+        <li><a href="#header">Header</a></li>
+        <li><a href="#biodata">Biodata</a></li>
+        <li><a href="#portofolio">Portofolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section 2 -->
+  <section class="section2">
+    <div>
+      <h1>SELAMAT DATANG DI WEBSITE SAYA</h1>
+      <p>Website ini menampilkan profil pribadi dan portofolio karya terbaik saya.</p>
+    </div>
+    <img src="papi.jpg" alt="Foto Profil">
+  </section>
+
+  <!-- Section 3: Biodata -->
+  <section id="biodata" class="section3">
+    <h2>BIO DATA</h2>
+    <h3>Perkenalkan Diri Saya</h3>
+    <div class="biodata-grid">
+	 <div class="biodata-item">
+       <div class="box">Fullname: John Doe</div>
+       <div class="box">Education: Sarjana</div>
+     </div>  
+     <div class="biodata-item">	   
+	  <div class="box">Pekerjaan: Programer</div>
+      <div class="box">Kontak: 089322223</div>
+     </div> 
+	 <div class="biodata-item">	   
+	  <div class="box">Hobi: Mancing,Bacabuku</div>
+      <div class="box">Alamat: jakarta</div>
+     </div> 
+    </div>
+  </section>
+
+  <!-- Section 4: Portofolio -->
+  <section id="portofolio" class="section4">
+    <h2>Portofolio</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="https://plus.unsplash.com/premium_photo-1681487178876-a1156952ec60?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 1">
+        <h3>Website Company Profile</h3>
+        <p>Membuat website profesional untuk perusahaan jasa.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://images.unsplash.com/photo-1735825764452-7c77b0bbd7a7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 2">
+        <h3>Aplikasi Kasir</h3>
+        <p>Aplikasi kasir desktop untuk mendukung UMKM.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://plus.unsplash.com/premium_photo-1661602130329-b11d41eedfe7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 3">
+        <h3>Desain Grafis</h3>
+        <p>Proyek desain logo dan banner promosi digital.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
